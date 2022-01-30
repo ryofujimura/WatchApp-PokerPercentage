@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBD5A6ED27A69147004285EC /* WatchApp_PokerPercentageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5A6EC27A69147004285EC /* WatchApp_PokerPercentageApp.swift */; };
+		FBD5A6EF27A69147004285EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5A6EE27A69147004285EC /* ContentView.swift */; };
+		FBD5A6F127A69148004285EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD5A6F027A69148004285EC /* Assets.xcassets */; };
+		FBD5A6F427A69148004285EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD5A6F327A69148004285EC /* Preview Assets.xcassets */; };
+		FBD5A6F827A69148004285EC /* WatchApp-PokerPercentage WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FBD5A6F727A69148004285EC /* WatchApp-PokerPercentage WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBD5A6FD27A69148004285EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD5A6FC27A69148004285EC /* Assets.xcassets */; };
+		FBD5A70327A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FBD5A70227A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBD5A70827A69148004285EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5A70727A69148004285EC /* ContentView.swift */; };
+		FBD5A70A27A69148004285EC /* WatchApp_PokerPercentageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5A70927A69148004285EC /* WatchApp_PokerPercentageApp.swift */; };
+		FBD5A70C27A69148004285EC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5A70B27A69148004285EC /* ComplicationController.swift */; };
+		FBD5A70E27A69149004285EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD5A70D27A69149004285EC /* Assets.xcassets */; };
+		FBD5A71127A69149004285EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD5A71027A69149004285EC /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBD5A6F927A69148004285EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBD5A6E127A69147004285EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD5A6F627A69148004285EC;
+			remoteInfo = "WatchApp-PokerPercentage WatchKit App";
+		};
+		FBD5A70427A69148004285EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBD5A6E127A69147004285EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD5A70127A69148004285EC;
+			remoteInfo = "WatchApp-PokerPercentage WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBD5A71827A69149004285EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FBD5A70327A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD5A71C27A69149004285EC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FBD5A6F827A69148004285EC /* WatchApp-PokerPercentage WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FBD5A6E927A69147004285EC /* WatchApp-PokerPercentage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchApp-PokerPercentage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD5A6EC27A69147004285EC /* WatchApp_PokerPercentageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp_PokerPercentageApp.swift; sourceTree = "<group>"; };
+		FBD5A6EE27A69147004285EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBD5A6F027A69148004285EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBD5A6F327A69148004285EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBD5A6F727A69148004285EC /* WatchApp-PokerPercentage WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchApp-PokerPercentage WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD5A6FC27A69148004285EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBD5A70227A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchApp-PokerPercentage WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD5A70727A69148004285EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBD5A70927A69148004285EC /* WatchApp_PokerPercentageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp_PokerPercentageApp.swift; sourceTree = "<group>"; };
+		FBD5A70B27A69148004285EC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FBD5A70D27A69149004285EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBD5A71027A69149004285EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBD5A71227A69149004285EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBD5A6E627A69147004285EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD5A6FF27A69148004285EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBD5A6E027A69147004285EC = {
+			isa = PBXGroup;
+			children = (
+				FBD5A6EB27A69147004285EC /* WatchApp-PokerPercentage */,
+				FBD5A6FB27A69148004285EC /* WatchApp-PokerPercentage WatchKit App */,
+				FBD5A70627A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension */,
+				FBD5A6EA27A69147004285EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBD5A6EA27A69147004285EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBD5A6E927A69147004285EC /* WatchApp-PokerPercentage.app */,
+				FBD5A6F727A69148004285EC /* WatchApp-PokerPercentage WatchKit App.app */,
+				FBD5A70227A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBD5A6EB27A69147004285EC /* WatchApp-PokerPercentage */ = {
+			isa = PBXGroup;
+			children = (
+				FBD5A6EC27A69147004285EC /* WatchApp_PokerPercentageApp.swift */,
+				FBD5A6EE27A69147004285EC /* ContentView.swift */,
+				FBD5A6F027A69148004285EC /* Assets.xcassets */,
+				FBD5A6F227A69148004285EC /* Preview Content */,
+			);
+			path = "WatchApp-PokerPercentage";
+			sourceTree = "<group>";
+		};
+		FBD5A6F227A69148004285EC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBD5A6F327A69148004285EC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBD5A6FB27A69148004285EC /* WatchApp-PokerPercentage WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FBD5A6FC27A69148004285EC /* Assets.xcassets */,
+			);
+			path = "WatchApp-PokerPercentage WatchKit App";
+			sourceTree = "<group>";
+		};
+		FBD5A70627A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FBD5A70727A69148004285EC /* ContentView.swift */,
+				FBD5A70927A69148004285EC /* WatchApp_PokerPercentageApp.swift */,
+				FBD5A70B27A69148004285EC /* ComplicationController.swift */,
+				FBD5A70D27A69149004285EC /* Assets.xcassets */,
+				FBD5A71227A69149004285EC /* Info.plist */,
+				FBD5A70F27A69149004285EC /* Preview Content */,
+			);
+			path = "WatchApp-PokerPercentage WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FBD5A70F27A69149004285EC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBD5A71027A69149004285EC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBD5A6E827A69147004285EC /* WatchApp-PokerPercentage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD5A71D27A69149004285EC /* Build configuration list for PBXNativeTarget "WatchApp-PokerPercentage" */;
+			buildPhases = (
+				FBD5A6E527A69147004285EC /* Sources */,
+				FBD5A6E627A69147004285EC /* Frameworks */,
+				FBD5A6E727A69147004285EC /* Resources */,
+				FBD5A71C27A69149004285EC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBD5A6FA27A69148004285EC /* PBXTargetDependency */,
+			);
+			name = "WatchApp-PokerPercentage";
+			productName = "WatchApp-PokerPercentage";
+			productReference = FBD5A6E927A69147004285EC /* WatchApp-PokerPercentage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBD5A6F627A69148004285EC /* WatchApp-PokerPercentage WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD5A71927A69149004285EC /* Build configuration list for PBXNativeTarget "WatchApp-PokerPercentage WatchKit App" */;
+			buildPhases = (
+				FBD5A6F527A69148004285EC /* Resources */,
+				FBD5A71827A69149004285EC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBD5A70527A69148004285EC /* PBXTargetDependency */,
+			);
+			name = "WatchApp-PokerPercentage WatchKit App";
+			productName = "WatchApp-PokerPercentage WatchKit App";
+			productReference = FBD5A6F727A69148004285EC /* WatchApp-PokerPercentage WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FBD5A70127A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBD5A71527A69149004285EC /* Build configuration list for PBXNativeTarget "WatchApp-PokerPercentage WatchKit Extension" */;
+			buildPhases = (
+				FBD5A6FE27A69148004285EC /* Sources */,
+				FBD5A6FF27A69148004285EC /* Frameworks */,
+				FBD5A70027A69148004285EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchApp-PokerPercentage WatchKit Extension";
+			productName = "WatchApp-PokerPercentage WatchKit Extension";
+			productReference = FBD5A70227A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBD5A6E127A69147004285EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FBD5A6E827A69147004285EC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					FBD5A6F627A69148004285EC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					FBD5A70127A69148004285EC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FBD5A6E427A69147004285EC /* Build configuration list for PBXProject "WatchApp-PokerPercentage" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBD5A6E027A69147004285EC;
+			productRefGroup = FBD5A6EA27A69147004285EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBD5A6E827A69147004285EC /* WatchApp-PokerPercentage */,
+				FBD5A6F627A69148004285EC /* WatchApp-PokerPercentage WatchKit App */,
+				FBD5A70127A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBD5A6E727A69147004285EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD5A6F427A69148004285EC /* Preview Assets.xcassets in Resources */,
+				FBD5A6F127A69148004285EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD5A6F527A69148004285EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD5A6FD27A69148004285EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD5A70027A69148004285EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD5A71127A69149004285EC /* Preview Assets.xcassets in Resources */,
+				FBD5A70E27A69149004285EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBD5A6E527A69147004285EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD5A6EF27A69147004285EC /* ContentView.swift in Sources */,
+				FBD5A6ED27A69147004285EC /* WatchApp_PokerPercentageApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD5A6FE27A69148004285EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD5A70827A69148004285EC /* ContentView.swift in Sources */,
+				FBD5A70A27A69148004285EC /* WatchApp_PokerPercentageApp.swift in Sources */,
+				FBD5A70C27A69148004285EC /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBD5A6FA27A69148004285EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBD5A6F627A69148004285EC /* WatchApp-PokerPercentage WatchKit App */;
+			targetProxy = FBD5A6F927A69148004285EC /* PBXContainerItemProxy */;
+		};
+		FBD5A70527A69148004285EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBD5A70127A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension */;
+			targetProxy = FBD5A70427A69148004285EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBD5A71327A69149004285EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBD5A71427A69149004285EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FBD5A71627A69149004285EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchApp-PokerPercentage WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = LD578K3BS7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchApp-PokerPercentage WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchApp-PokerPercentage WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ryofuj.WatchApp-PokerPercentage.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		FBD5A71727A69149004285EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchApp-PokerPercentage WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = LD578K3BS7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchApp-PokerPercentage WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchApp-PokerPercentage WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ryofuj.WatchApp-PokerPercentage.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		FBD5A71A27A69149004285EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LD578K3BS7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchApp_PokerPercentage_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchApp-PokerPercentage WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "ryofuj.WatchApp-PokerPercentage";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ryofuj.WatchApp-PokerPercentage.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		FBD5A71B27A69149004285EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LD578K3BS7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchApp_PokerPercentage_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchApp-PokerPercentage WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "ryofuj.WatchApp-PokerPercentage";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ryofuj.WatchApp-PokerPercentage.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		FBD5A71E27A69149004285EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchApp-PokerPercentage/Preview Content\"";
+				DEVELOPMENT_TEAM = LD578K3BS7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ryofuj.WatchApp-PokerPercentage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBD5A71F27A69149004285EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchApp-PokerPercentage/Preview Content\"";
+				DEVELOPMENT_TEAM = LD578K3BS7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ryofuj.WatchApp-PokerPercentage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBD5A6E427A69147004285EC /* Build configuration list for PBXProject "WatchApp-PokerPercentage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD5A71327A69149004285EC /* Debug */,
+				FBD5A71427A69149004285EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD5A71527A69149004285EC /* Build configuration list for PBXNativeTarget "WatchApp-PokerPercentage WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD5A71627A69149004285EC /* Debug */,
+				FBD5A71727A69149004285EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD5A71927A69149004285EC /* Build configuration list for PBXNativeTarget "WatchApp-PokerPercentage WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD5A71A27A69149004285EC /* Debug */,
+				FBD5A71B27A69149004285EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBD5A71D27A69149004285EC /* Build configuration list for PBXNativeTarget "WatchApp-PokerPercentage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBD5A71E27A69149004285EC /* Debug */,
+				FBD5A71F27A69149004285EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBD5A6E127A69147004285EC /* Project object */;
+}
