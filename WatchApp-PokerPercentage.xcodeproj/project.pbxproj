@@ -19,6 +19,7 @@
 		FBD5A70C27A69148004285EC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5A70B27A69148004285EC /* ComplicationController.swift */; };
 		FBD5A70E27A69149004285EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD5A70D27A69149004285EC /* Assets.xcassets */; };
 		FBD5A71127A69149004285EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD5A71027A69149004285EC /* Preview Assets.xcassets */; };
+		FBD5A72127A69A09004285EC /* eachCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5A72027A69A09004285EC /* eachCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		FBD5A70D27A69149004285EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBD5A71027A69149004285EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FBD5A71227A69149004285EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD5A72027A69A09004285EC /* eachCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eachCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		FBD5A70627A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FBD5A72027A69A09004285EC /* eachCardView.swift */,
 				FBD5A70727A69148004285EC /* ContentView.swift */,
 				FBD5A70927A69148004285EC /* WatchApp_PokerPercentageApp.swift */,
 				FBD5A70B27A69148004285EC /* ComplicationController.swift */,
@@ -309,6 +312,7 @@
 				FBD5A70827A69148004285EC /* ContentView.swift in Sources */,
 				FBD5A70A27A69148004285EC /* WatchApp_PokerPercentageApp.swift in Sources */,
 				FBD5A70C27A69148004285EC /* ComplicationController.swift in Sources */,
+				FBD5A72127A69A09004285EC /* eachCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,7 +577,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,7 +608,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
