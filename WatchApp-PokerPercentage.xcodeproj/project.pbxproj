@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB4498DC27A75F96008D34B4 /* CalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4498DB27A75F96008D34B4 /* CalculateView.swift */; };
 		FBD5A6ED27A69147004285EC /* WatchApp_PokerPercentageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5A6EC27A69147004285EC /* WatchApp_PokerPercentageApp.swift */; };
 		FBD5A6EF27A69147004285EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5A6EE27A69147004285EC /* ContentView.swift */; };
 		FBD5A6F127A69148004285EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD5A6F027A69148004285EC /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB4498DB27A75F96008D34B4 /* CalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateView.swift; sourceTree = "<group>"; };
 		FBD5A6E927A69147004285EC /* WatchApp-PokerPercentage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchApp-PokerPercentage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD5A6EC27A69147004285EC /* WatchApp_PokerPercentageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp_PokerPercentageApp.swift; sourceTree = "<group>"; };
 		FBD5A6EE27A69147004285EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				FBD5A72027A69A09004285EC /* eachCardView.swift */,
+				FB4498DB27A75F96008D34B4 /* CalculateView.swift */,
 				FBD5A70727A69148004285EC /* ContentView.swift */,
 				FBD5A70927A69148004285EC /* WatchApp_PokerPercentageApp.swift */,
 				FBD5A70B27A69148004285EC /* ComplicationController.swift */,
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD5A70827A69148004285EC /* ContentView.swift in Sources */,
+				FB4498DC27A75F96008D34B4 /* CalculateView.swift in Sources */,
 				FBD5A70A27A69148004285EC /* WatchApp_PokerPercentageApp.swift in Sources */,
 				FBD5A70C27A69148004285EC /* ComplicationController.swift in Sources */,
 				FBD5A72127A69A09004285EC /* eachCardView.swift in Sources */,

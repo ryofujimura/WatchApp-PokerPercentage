@@ -21,7 +21,20 @@ struct eachCardView: View {
                         RoundedRectangle(cornerRadius: 3)
                         .stroke(lineWidth: 1)
                     )
-            HStack{
+            if (cardNumber == "10"){
+                HStack{
+                    Text(cardNumber)
+                        .foregroundColor(Color.white)
+                        .offset(x: 3, y: -3)
+                        .font(.system(size: 17))
+                    Text(cardNumber)
+                        .foregroundColor(Color.white)
+                        .offset(x: -3.5, y: 6)
+                        .font(.system(size: 9))
+                }
+            }
+            else{
+                HStack{
                 Text(cardNumber)
                     .foregroundColor(Color.white)
                     .offset(x: 1, y: -2)
@@ -30,6 +43,7 @@ struct eachCardView: View {
                     .foregroundColor(Color.white)
                     .offset(x: -1, y: 3)
                     .font(.system(size: 13))
+                }
             }
         }
     }
@@ -37,6 +51,6 @@ struct eachCardView: View {
 
 struct eachCardView_Previews: PreviewProvider {
     static var previews: some View {
-        eachCardView(cardNumber: "A")
+        eachCardView(cardNumber: "10")
     }
 }
