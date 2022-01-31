@@ -28,15 +28,10 @@ struct ContentView: View {
                         eachCardView(cardNumber: "J").tag(11)
                     }
                     Group{
-                        eachCardView(cardNumber: "10").tag(10)
-                        eachCardView(cardNumber: "9").tag(9)
-                        eachCardView(cardNumber: "8").tag(8)
-                        eachCardView(cardNumber: "7").tag(7)
-                        eachCardView(cardNumber: "6").tag(6)
-                        eachCardView(cardNumber: "5").tag(5)
-                        eachCardView(cardNumber: "4").tag(4)
-                        eachCardView(cardNumber: "3").tag(3)
-                        eachCardView(cardNumber: "2").tag(2)
+                        ForEach((2...10).reversed(), id: \.self) {
+                            eachCardView(cardNumber: "\($0)").tag($0)
+                           }
+                       
                     }
                 }
                 .labelsHidden()
@@ -51,15 +46,10 @@ struct ContentView: View {
                         eachCardView(cardNumber: "J").tag(11)
                     }
                     Group{
-                        eachCardView(cardNumber: "10").tag(10)
-                        eachCardView(cardNumber: "9").tag(9)
-                        eachCardView(cardNumber: "8").tag(8)
-                        eachCardView(cardNumber: "7").tag(7)
-                        eachCardView(cardNumber: "6").tag(6)
-                        eachCardView(cardNumber: "5").tag(5)
-                        eachCardView(cardNumber: "4").tag(4)
-                        eachCardView(cardNumber: "3").tag(3)
-                        eachCardView(cardNumber: "2").tag(2)
+                        ForEach((2...10).reversed(), id: \.self) {
+                            eachCardView(cardNumber: "\($0)").tag($0)
+                           }
+                       
                     }
                 }
                 .labelsHidden()
