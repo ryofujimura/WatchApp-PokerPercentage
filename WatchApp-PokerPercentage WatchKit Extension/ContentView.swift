@@ -8,16 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var secondScreenShown = false
     @State var cardOneValue = 1
     @State var cardTwoValue = 1
+    @State var suited:Bool = true
     
     var body: some View {
         VStack {
             Spacer()
-                .padding(.top)
-            Text("Winning %?")
-                .padding(.top)
+                .padding(.bottom, 22.0)
             HStack {
                 Spacer()
                 Picker(selection: $cardOneValue, label: Text("")){
@@ -35,8 +33,7 @@ struct ContentView: View {
                     }
                 }
                 .labelsHidden()
-                .frame(width: 50, height:100)
-                
+                .frame(width: 50, height:90)
                 Spacer()
                 Picker(selection: $cardTwoValue, label: Text("")){
                     Group{
@@ -53,29 +50,14 @@ struct ContentView: View {
                     }
                 }
                 .labelsHidden()
-                .frame(width: 50, height:100)
+                .frame(width: 50, height:90)
                 Spacer()
             }
             CalculateView(cardOneValue: cardOneValue, cardTwoValue: cardTwoValue)
-            .padding(.vertical)
+                .padding(.vertical)
         }
     }
 }
-//struct CalculatePercentage {
-//    var cardOne:Int
-//    var cardTwo:Int
-//    var percentage:Int
-//
-//    var cardOne = $cardOneValue.tag
-//    cardTwo = $cardTwoValue
-//
-//    if(cardOne = cardTwo){
-//        return "85%"
-//    }
-//
-//}
-//
-//
 
 
 
