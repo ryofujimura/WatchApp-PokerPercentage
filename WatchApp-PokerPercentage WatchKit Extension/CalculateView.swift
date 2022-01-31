@@ -11,7 +11,8 @@ struct CalculateView: View {
     public var cardOneValue:Int
     public var cardTwoValue:Int
     
-    @State var suited:Bool = true
+    @State var suited:Bool = false
+    @State var goLight:Bool = false
     @State var firstValue:Int = 0
     @State var secondValue:Int = 0
     @State var percentage:Int = 0
@@ -63,22 +64,22 @@ struct CalculateView: View {
         return percentage
     }
     
-    private let overSeventy = Color(red: 44/256, green: 142/256, blue: 78/256)
+    private let overSeventy = Color(red: 0/256, green: 227/256, blue: 15/256)
     private let overSixty = Color(red: 139/256, green: 238/256, blue: 156/256)
     private let overFifty = Color(red: 252/256, green: 227/256, blue: 154/256)
     private let overFourty = Color(red: 250/256, green: 189/256, blue: 172/256)
     private let overThirty = Color(red: 222/256, green: 71/256, blue: 71/256)
     func ColorPicker() -> Color{
-        if Calculate(percentage: percentage,  firstValue: firstValue, secondValue: secondValue) > 70{
+        if Calculate(percentage: percentage,  firstValue: firstValue, secondValue: secondValue) >= 70{
             return overSeventy
         }
-        else if Calculate(percentage: percentage,  firstValue: firstValue, secondValue: secondValue) > 60{
+        else if Calculate(percentage: percentage,  firstValue: firstValue, secondValue: secondValue) >= 60{
             return overSixty
         }
-        else if Calculate(percentage: percentage,  firstValue: firstValue, secondValue: secondValue) > 50{
+        else if Calculate(percentage: percentage,  firstValue: firstValue, secondValue: secondValue) >= 50{
             return overFifty
         }
-        else if Calculate(percentage: percentage,  firstValue: firstValue, secondValue: secondValue) > 40{
+        else if Calculate(percentage: percentage,  firstValue: firstValue, secondValue: secondValue) >= 40{
             return overFourty
         }
         else{
@@ -104,6 +105,7 @@ struct CalculateView: View {
             return String(card)
         }
     }
+    
     var body: some View {
         VStack{
             Button(action: {
@@ -124,16 +126,48 @@ struct CalculateView: View {
             .background(suited ? Color.orange : Color.gray)
             .frame(width: 130, height: 22, alignment: .center)
             .cornerRadius(100)
-            Label {
-                Text("\(ConvertToAlphabet(card:cardOneValue)) + \(ConvertToAlphabet(card:cardTwoValue)) = \(Calculate(percentage: percentage,  firstValue: firstValue, secondValue: secondValue))%")
-                    .font(.body)
-                    .foregroundColor(.primary)
-            } icon: {
-                Circle()
-                    .frame(width: 34, height: 24, alignment: .center)
-                    .foregroundStyle(ColorPicker())
+            Spacer()
+            Button(action: {
+                goLight.toggle()
+            }) {
+                if goLight{
+                    Label {
+                        Text("\(Calculate(percentage: percentage,  firstValue: firstValue, secondValue: secondValue))%")
+                            .font(.title)
+                            .foregroundColor(ColorPicker())
+                            .offset(x:7)
+                    } icon: {}
+                }
+                else{
+                    HStack{
+                        if(ColorPicker() == overSeventy ||  ColorPicker() == overSixty){
+                            Image(systemName: "circle.fill")
+                                .foregroundColor(ColorPicker())
+                            Image(systemName: "circle.fill")
+                                .foregroundColor(Color.gray)
+                            Image(systemName: "circle.fill")
+                                .foregroundColor(Color.gray)
+                        } else if (ColorPicker() == overFifty){
+                            Image(systemName: "circle.fill")
+                                .foregroundColor(Color.gray)
+                            Image(systemName: "circle.fill")
+                                .foregroundColor(ColorPicker())
+                            Image(systemName: "circle.fill")
+                                .foregroundColor(Color.gray)
+                        } else {
+                            Image(systemName: "circle.fill")
+                                .foregroundColor(Color.gray)
+                            Image(systemName: "circle.fill")
+                                .foregroundColor(Color.gray)
+                            Image(systemName: "circle.fill")
+                                .foregroundColor(ColorPicker())
+                        }
+                    }
+                    .font(.title)
+                }
             }
-            .padding(.top, 5.0)
+            .buttonStyle(PlainButtonStyle())
+            .offset(x:0, y:25)
         }
         
     }
@@ -144,7 +178,7 @@ struct CalculateView: View {
 struct CalculateView_Previews: PreviewProvider {
     static var previews: some View {
         VStack{
-            CalculateView(cardOneValue: 12, cardTwoValue: 1)
+            CalculateView(cardOneValue: 4, cardTwoValue: 9)
         }
     }
 }

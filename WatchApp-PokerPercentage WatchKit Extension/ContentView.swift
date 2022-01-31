@@ -13,9 +13,7 @@ struct ContentView: View {
     @State var suited:Bool = true
     
     var body: some View {
-        VStack {
-            Spacer()
-                .padding(.bottom, 22.0)
+        ZStack {
             HStack {
                 Spacer()
                 Picker(selection: $cardOneValue, label: Text("")){
@@ -53,8 +51,8 @@ struct ContentView: View {
                 .frame(width: 50, height:90)
                 Spacer()
             }
+            .offset(y:10)
             CalculateView(cardOneValue: cardOneValue, cardTwoValue: cardTwoValue)
-                .padding(.vertical)
         }
     }
 }
