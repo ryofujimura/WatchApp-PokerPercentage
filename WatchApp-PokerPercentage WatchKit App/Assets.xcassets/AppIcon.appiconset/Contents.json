@@ -1,7 +1,61 @@
 {
   "images" : [
     {
-      "filename" : "-Artboard 148.png",
+      "filename" : "poker - 40.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "poker - 60.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "poker - 58-1.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "poker - 87-1.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "poker - 80-1.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "poker - 120-1.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "poker - 120.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "poker - 180.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "poker - 1024-1.png",
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
+      "size" : "1024x1024"
+    },
+    {
+      "filename" : "poker - 48.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -9,7 +63,7 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "-Artboard 155.png",
+      "filename" : "poker - 55.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -17,21 +71,21 @@
       "subtype" : "42mm"
     },
     {
-      "filename" : "-Artboard 158.png",
+      "filename" : "poker - 58.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "-Artboard 187.png",
+      "filename" : "poker - 87.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "-Artboard 166.png",
+      "filename" : "poker - 66.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -39,7 +93,7 @@
       "subtype" : "45mm"
     },
     {
-      "filename" : "-Artboard 180.png",
+      "filename" : "poker - 80.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -47,7 +101,7 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "-Artboard 188.png",
+      "filename" : "poker - 88.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -55,7 +109,7 @@
       "subtype" : "40mm"
     },
     {
-      "filename" : "-Artboard 192.png",
+      "filename" : "poker - 92.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -63,7 +117,7 @@
       "subtype" : "41mm"
     },
     {
-      "filename" : "-Artboard 1100.png",
+      "filename" : "poker - 100.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -71,7 +125,7 @@
       "subtype" : "44mm"
     },
     {
-      "filename" : "-Artboard 1102.png",
+      "filename" : "poker - 102.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -79,7 +133,7 @@
       "subtype" : "45mm"
     },
     {
-      "filename" : "-Artboard 1172.png",
+      "filename" : "poker - 172.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -87,7 +141,7 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "-Artboard 1196.png",
+      "filename" : "poker - 196.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -95,7 +149,7 @@
       "subtype" : "42mm"
     },
     {
-      "filename" : "-Artboard 1216.png",
+      "filename" : "poker - 216.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -103,7 +157,7 @@
       "subtype" : "44mm"
     },
     {
-      "filename" : "-Artboard 1234.png",
+      "filename" : "poker - 234.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -111,7 +165,7 @@
       "subtype" : "45mm"
     },
     {
-      "filename" : "Icon-AppleWatch-1024x1024.png",
+      "filename" : "poker - 1024.png",
       "idiom" : "watch-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
