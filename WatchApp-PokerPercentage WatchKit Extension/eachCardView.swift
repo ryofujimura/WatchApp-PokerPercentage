@@ -12,39 +12,14 @@ struct eachCardView: View {
     
     var body: some View {
         ZStack {
-            Image(systemName: "rectangle.fill")
+            Image("cardView")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 27)
-                .foregroundColor(Color("CardBackgorund"))
-                .overlay(
-                        RoundedRectangle(cornerRadius: 3)
-                        .stroke(lineWidth: 1)
-                    )
-            if (cardNumber == "10"){
-                HStack{
-                    Text(cardNumber)
-                        .foregroundColor(Color.white)
-                        .offset(x: 3, y: -3)
-                        .font(.system(size: 17))
-                    Text(cardNumber)
-                        .foregroundColor(Color.white)
-                        .offset(x: -3.5, y: 6)
-                        .font(.system(size: 9))
-                }
-            }
-            else{
-                HStack{
-                Text(cardNumber)
-                    .foregroundColor(Color.white)
-                    .offset(x: 1, y: -2)
-                    .font(.system(size: 20))
-                Text(cardNumber)
-                    .foregroundColor(Color.white)
-                    .offset(x: -1, y: 3)
-                    .font(.system(size: 13))
-                }
-            }
+                .frame(width: 25)
+                .foregroundColor(Color.white)
+            Text(cardNumber)
+                .foregroundColor(Color.black)
+//                .offset(x: -3, y:-2)
         }
     }
 }

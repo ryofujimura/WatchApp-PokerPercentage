@@ -10,8 +10,8 @@ import SwiftUI
 struct CalculateView: View {
     public var cardOneValue:Int
     public var cardTwoValue:Int
-    
     @State var suited:Bool = false
+    
     @State var goLight:Bool = false
     @State var firstValue:Int = 0
     @State var secondValue:Int = 0
@@ -29,19 +29,19 @@ struct CalculateView: View {
                                       [65,47,48,48,49,50,52,53,55,57,78],
                                       [65,49,50,51,52,53,54,55,57,59,59,80],
                                       [66,53,54,54,55,56,57,58,59,61,62,62,83]]
-    private let probabilitySuite = [[0],
-                                    [59,0],
-                                    [60,39,0],
-                                    [61,40,42,0],
-                                    [62,41,43,44,0],
-                                    [62,40,42,44,46,0],
-                                    [63,41,43,45,46,48,0],
-                                    [63,43,43,45,47,49,50,0],
-                                    [64,45,46,46,48,50,51,53,0],
-                                    [64,47,48,49,49,51,53,54,56,0],
-                                    [66,50,50,51,52,53,54,56,57,59,0],
-                                    [67,52,53,54,55,55,56,58,59,61,61,0],
-                                    [68,55,56,57,58,58,59,60,61,63,64,64,0]]
+    private let probabilitySuite = [[85],
+                                    [59,51],
+                                    [60,39,55],
+                                    [61,40,42,58],
+                                    [62,41,43,44,61],
+                                    [62,40,42,44,46,64],
+                                    [63,41,43,45,46,48,67],
+                                    [63,43,43,45,47,49,50,69],
+                                    [64,45,46,46,48,50,51,53,72],
+                                    [64,47,48,49,49,51,53,54,56,75],
+                                    [66,50,50,51,52,53,54,56,57,59,78],
+                                    [67,52,53,54,55,55,56,58,59,61,61,80],
+                                    [68,55,56,57,58,58,59,60,61,63,64,64,83]]
     
     func Calculate(percentage : Int, firstValue:Int, secondValue:Int) -> Int{
         var percentage = percentage
@@ -106,20 +106,23 @@ struct CalculateView: View {
         }
     }
     
+    private let darkGreen = Color(red: 0/256, green: 36/256, blue: 0/256)
+    private let darkYellow = Color(red: 55/256, green: 55/256, blue: 0/256)
+    private let darkRed = Color(red: 36/256, green: 0/256, blue: 0/256)    
     var body: some View {
         VStack{
             Button(action: {
-                if (cardOneValue == cardTwoValue){
-                    suited = true
-                }
                 suited.toggle()
+                if (cardOneValue == cardTwoValue){
+                    suited = false
+                }
             }) {
                 if suited{
-                    Text("\(Image(systemName: "suit.spade.fill"))   Suited   \(Image(systemName: "suit.spade.fill"))")
+                   Text("\(Image(systemName: "suit.spade.fill"))   Suited   \(Image(systemName: "suit.spade.fill"))")
                         .foregroundColor(.white)
                 }
                 else{
-                    Text("\(Image(systemName: "suit.diamond")) Unsuited \(Image(systemName: "suit.club"))")
+                    Text("\(Image(systemName: "suit.diamond"))  Offsuit  \(Image(systemName: "suit.heart"))")
                         .foregroundColor(.black)
                 }
             }
@@ -136,31 +139,59 @@ struct CalculateView: View {
                             .font(.title)
                             .foregroundColor(ColorPicker())
                             .offset(x:7)
-                    } icon: {}
+                    } icon: {
+                        ZStack{
+                            Circle()
+                                .foregroundColor(ColorPicker())
+                                .frame(width: 30, height: 30, alignment: .center)
+                            if(ColorPicker() == overSeventy ||  ColorPicker() == overSixty){
+                                Text("💰")
+                                    .font(.title3)
+                            } else if (ColorPicker() == overFifty){
+                                Text("💵")
+                                    .font(.title3)
+                            } else {
+                                Text("💸")
+                                    .font(.title3)
+                            }
+                        }
+                    }
                 }
                 else{
                     HStack{
                         if(ColorPicker() == overSeventy ||  ColorPicker() == overSixty){
+                            ZStack{
+                                Image(systemName: "circle.fill")
+                                    .foregroundColor(ColorPicker())
+                                Text("💰")
+                                    .font(.title3)
+                            }
                             Image(systemName: "circle.fill")
-                                .foregroundColor(ColorPicker())
+                                .foregroundColor(darkYellow)
                             Image(systemName: "circle.fill")
-                                .foregroundColor(Color.gray)
-                            Image(systemName: "circle.fill")
-                                .foregroundColor(Color.gray)
+                                .foregroundColor(darkRed)
                         } else if (ColorPicker() == overFifty){
                             Image(systemName: "circle.fill")
-                                .foregroundColor(Color.gray)
+                                .foregroundColor(darkGreen)
+                            ZStack{
+                                Image(systemName: "circle.fill")
+                                    .foregroundColor(ColorPicker())
+                                Text("💵")
+                                    .font(.title3)
+                            }
                             Image(systemName: "circle.fill")
-                                .foregroundColor(ColorPicker())
-                            Image(systemName: "circle.fill")
-                                .foregroundColor(Color.gray)
+                                .foregroundColor(darkRed)
                         } else {
                             Image(systemName: "circle.fill")
-                                .foregroundColor(Color.gray)
+                                .foregroundColor(darkGreen)
                             Image(systemName: "circle.fill")
-                                .foregroundColor(Color.gray)
-                            Image(systemName: "circle.fill")
-                                .foregroundColor(ColorPicker())
+                                .foregroundColor(darkYellow)
+                            ZStack{
+                                Image(systemName: "circle.fill")
+                                    .foregroundColor(ColorPicker())
+                                Text("💸")
+                                    .font(.title3)
+                            }
                         }
                     }
                     .font(.title)
@@ -178,7 +209,7 @@ struct CalculateView: View {
 struct CalculateView_Previews: PreviewProvider {
     static var previews: some View {
         VStack{
-            CalculateView(cardOneValue: 4, cardTwoValue: 9)
+            CalculateView(cardOneValue: 1, cardTwoValue: 1)
         }
     }
 }

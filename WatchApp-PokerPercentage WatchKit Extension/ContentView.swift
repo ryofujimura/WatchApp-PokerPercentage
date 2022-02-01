@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State var cardOneValue = 1
     @State var cardTwoValue = 1
-    @State var suited:Bool = true
-    
+//    @State var suited:Bool = false
+
     var body: some View {
         ZStack {
             HStack {
@@ -44,14 +44,13 @@ struct ContentView: View {
                         ForEach((2...10).reversed(), id: \.self) {
                             eachCardView(cardNumber: "\($0)").tag($0)
                            }
-                       
                     }
                 }
                 .labelsHidden()
                 .frame(width: 50, height:90)
                 Spacer()
             }
-            .offset(y:10)
+            .offset(y:8)
             CalculateView(cardOneValue: cardOneValue, cardTwoValue: cardTwoValue)
         }
     }
