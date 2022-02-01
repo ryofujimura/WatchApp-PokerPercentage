@@ -118,7 +118,7 @@ struct CalculateView: View {
                 }
             }) {
                 if suited{
-                   Text("\(Image(systemName: "suit.spade.fill"))   Suited   \(Image(systemName: "suit.spade.fill"))")
+                   Text("\(Image(systemName: "suit.spade.fill"))  Suited  \(Image(systemName: "suit.spade.fill"))")
                         .foregroundColor(.white)
                 }
                 else{
@@ -209,7 +209,7 @@ struct CalculateView: View {
 struct CalculateView_Previews: PreviewProvider {
     static var previews: some View {
         VStack{
-            CalculateView(cardOneValue: 1, cardTwoValue: 1)
+            CalculateView(cardOneValue: 1, cardTwoValue: 2)
         }
     }
 }
