@@ -15,7 +15,7 @@ struct eachCardView: View {
             Image("cardView")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 25)
+                .frame(width: 29)
                 .foregroundColor(Color.white)
             Text(cardNumber)
                 .foregroundColor(Color.black)
