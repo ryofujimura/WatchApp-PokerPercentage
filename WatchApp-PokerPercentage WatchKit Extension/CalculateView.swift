@@ -12,7 +12,7 @@ struct CalculateView: View {
     public var cardTwoValue:Int
     @State var suited:Bool = false
     
-    @State var goLight:Bool = false
+    @State var goLight:Bool = true
     @State var firstValue:Int = 0
     @State var secondValue:Int = 0
     @State var percentage:Int = 0

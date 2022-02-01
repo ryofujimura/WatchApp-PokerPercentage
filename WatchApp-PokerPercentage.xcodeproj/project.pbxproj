@@ -12,7 +12,7 @@
 		FBD5A6EF27A69147004285EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5A6EE27A69147004285EC /* ContentView.swift */; };
 		FBD5A6F127A69148004285EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD5A6F027A69148004285EC /* Assets.xcassets */; };
 		FBD5A6F427A69148004285EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD5A6F327A69148004285EC /* Preview Assets.xcassets */; };
-		FBD5A6F827A69148004285EC /* WatchApp-PokerPercentage WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FBD5A6F727A69148004285EC /* WatchApp-PokerPercentage WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBD5A6F827A69148004285EC /* Poker %.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FBD5A6F727A69148004285EC /* Poker %.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FBD5A6FD27A69148004285EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD5A6FC27A69148004285EC /* Assets.xcassets */; };
 		FBD5A70327A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FBD5A70227A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FBD5A70827A69148004285EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5A70727A69148004285EC /* ContentView.swift */; };
@@ -58,7 +58,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				FBD5A6F827A69148004285EC /* WatchApp-PokerPercentage WatchKit App.app in Embed Watch Content */,
+				FBD5A6F827A69148004285EC /* Poker %.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,7 +72,7 @@
 		FBD5A6EE27A69147004285EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBD5A6F027A69148004285EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBD5A6F327A69148004285EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FBD5A6F727A69148004285EC /* WatchApp-PokerPercentage WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchApp-PokerPercentage WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD5A6F727A69148004285EC /* Poker %.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poker %.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD5A6FC27A69148004285EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBD5A70227A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchApp-PokerPercentage WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD5A70727A69148004285EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				FBD5A6E927A69147004285EC /* WatchApp-PokerPercentage.app */,
-				FBD5A6F727A69148004285EC /* WatchApp-PokerPercentage WatchKit App.app */,
+				FBD5A6F727A69148004285EC /* Poker %.app */,
 				FBD5A70227A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -208,7 +208,7 @@
 			);
 			name = "WatchApp-PokerPercentage WatchKit App";
 			productName = "WatchApp-PokerPercentage WatchKit App";
-			productReference = FBD5A6F727A69148004285EC /* WatchApp-PokerPercentage WatchKit App.app */;
+			productReference = FBD5A6F727A69148004285EC /* Poker %.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		FBD5A70127A69148004285EC /* WatchApp-PokerPercentage WatchKit Extension */ = {
@@ -459,7 +459,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchApp-PokerPercentage WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchApp-PokerPercentage WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchApp_PokerPercentage_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,7 +491,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchApp-PokerPercentage WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchApp-PokerPercentage WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchApp_PokerPercentage_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -523,12 +523,11 @@
 				DEVELOPMENT_TEAM = LD578K3BS7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchApp_PokerPercentage_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "WatchApp-PokerPercentage WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "ryofuj.WatchApp-PokerPercentage";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ryofuj.WatchApp-PokerPercentage.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Poker %";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -549,12 +548,11 @@
 				DEVELOPMENT_TEAM = LD578K3BS7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchApp_PokerPercentage_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "WatchApp-PokerPercentage WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "ryofuj.WatchApp-PokerPercentage";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ryofuj.WatchApp-PokerPercentage.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Poker %";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -588,7 +586,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ryofuj.WatchApp-PokerPercentage";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WatchApp-PokerPercentage";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -619,7 +617,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ryofuj.WatchApp-PokerPercentage";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WatchApp-PokerPercentage";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
