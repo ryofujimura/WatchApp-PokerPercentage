@@ -2,3 +2,5 @@
 PokerPercentage/PokerPercentage.xcodeproj/project.xcworkspace/xcuserdata/ryofuj.xcuserdatad/UserInterfaceState.xcuserstate
 PokerPercentage/PokerPercentage.xcodeproj/project.xcworkspace/xcuserdata/ryofuj.xcuserdatad/UserInterfaceState.xcuserstate
 *.xcuserstate
+.DS_Store
+*.plist
