@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFB3E8B12BD30BFE000A34D3 /* PokerMastermind Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AFB3E8B02BD30BFE000A34D3 /* PokerMastermind Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		AFB3E8B62BD30BFE000A34D3 /* PokerMastermindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3E8B52BD30BFE000A34D3 /* PokerMastermindApp.swift */; };
+		AFB3E8B12BD30BFE000A34D3 /* Poker Pocket Odds.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AFB3E8B02BD30BFE000A34D3 /* Poker Pocket Odds.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFB3E8B62BD30BFE000A34D3 /* PokerPocketOddsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3E8B52BD30BFE000A34D3 /* PokerPocketOddsApp.swift */; };
 		AFB3E8B82BD30BFE000A34D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3E8B72BD30BFE000A34D3 /* ContentView.swift */; };
 		AFB3E8BA2BD30BFF000A34D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB3E8B92BD30BFF000A34D3 /* Assets.xcassets */; };
 		AFB3E8BD2BD30BFF000A34D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB3E8BC2BD30BFF000A34D3 /* Preview Assets.xcassets */; };
@@ -33,7 +33,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				AFB3E8B12BD30BFE000A34D3 /* PokerMastermind Watch App.app in Embed Watch Content */,
+				AFB3E8B12BD30BFE000A34D3 /* Poker Pocket Odds.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,9 +41,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AFB3E8AA2BD30BFE000A34D3 /* PokerMastermind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerMastermind.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFB3E8B02BD30BFE000A34D3 /* PokerMastermind Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokerMastermind Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFB3E8B52BD30BFE000A34D3 /* PokerMastermindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerMastermindApp.swift; sourceTree = "<group>"; };
+		AFB3E8AA2BD30BFE000A34D3 /* Poker Pocket Odds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poker Pocket Odds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB3E8B02BD30BFE000A34D3 /* Poker Pocket Odds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poker Pocket Odds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB3E8B52BD30BFE000A34D3 /* PokerPocketOddsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerPocketOddsApp.swift; sourceTree = "<group>"; };
 		AFB3E8B72BD30BFE000A34D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AFB3E8B92BD30BFF000A34D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB3E8BC2BD30BFF000A34D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -73,8 +73,8 @@
 		AFB3E8AB2BD30BFE000A34D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AFB3E8AA2BD30BFE000A34D3 /* PokerMastermind.app */,
-				AFB3E8B02BD30BFE000A34D3 /* PokerMastermind Watch App.app */,
+				AFB3E8AA2BD30BFE000A34D3 /* Poker Pocket Odds.app */,
+				AFB3E8B02BD30BFE000A34D3 /* Poker Pocket Odds.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,7 +82,7 @@
 		AFB3E8B42BD30BFE000A34D3 /* PokerMastermind Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				AFB3E8B52BD30BFE000A34D3 /* PokerMastermindApp.swift */,
+				AFB3E8B52BD30BFE000A34D3 /* PokerPocketOddsApp.swift */,
 				AFB3E8B72BD30BFE000A34D3 /* ContentView.swift */,
 				AFB3E8C72BD30C73000A34D3 /* EachCardView.swift */,
 				AFB3E8C92BD30DBE000A34D3 /* CalculateView.swift */,
@@ -103,9 +103,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AFB3E8A92BD30BFE000A34D3 /* PokerMastermind */ = {
+		AFB3E8A92BD30BFE000A34D3 /* Poker Pocket Odds */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFB3E8C42BD30BFF000A34D3 /* Build configuration list for PBXNativeTarget "PokerMastermind" */;
+			buildConfigurationList = AFB3E8C42BD30BFF000A34D3 /* Build configuration list for PBXNativeTarget "Poker Pocket Odds" */;
 			buildPhases = (
 				AFB3E8A82BD30BFE000A34D3 /* Resources */,
 				AFB3E8C32BD30BFF000A34D3 /* Embed Watch Content */,
@@ -115,14 +115,14 @@
 			dependencies = (
 				AFB3E8B32BD30BFE000A34D3 /* PBXTargetDependency */,
 			);
-			name = PokerMastermind;
+			name = "Poker Pocket Odds";
 			productName = PokerMastermind;
-			productReference = AFB3E8AA2BD30BFE000A34D3 /* PokerMastermind.app */;
+			productReference = AFB3E8AA2BD30BFE000A34D3 /* Poker Pocket Odds.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		AFB3E8AF2BD30BFE000A34D3 /* PokerMastermind Watch App */ = {
+		AFB3E8AF2BD30BFE000A34D3 /* Poker Pocket Odds Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFB3E8C02BD30BFF000A34D3 /* Build configuration list for PBXNativeTarget "PokerMastermind Watch App" */;
+			buildConfigurationList = AFB3E8C02BD30BFF000A34D3 /* Build configuration list for PBXNativeTarget "Poker Pocket Odds Watch App" */;
 			buildPhases = (
 				AFB3E8AC2BD30BFE000A34D3 /* Sources */,
 				AFB3E8AD2BD30BFE000A34D3 /* Frameworks */,
@@ -132,9 +132,9 @@
 			);
 			dependencies = (
 			);
-			name = "PokerMastermind Watch App";
+			name = "Poker Pocket Odds Watch App";
 			productName = "PokerMastermind Watch App";
-			productReference = AFB3E8B02BD30BFE000A34D3 /* PokerMastermind Watch App.app */;
+			productReference = AFB3E8B02BD30BFE000A34D3 /* Poker Pocket Odds.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -155,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AFB3E8A72BD30BFE000A34D3 /* Build configuration list for PBXProject "PokerMastermind" */;
+			buildConfigurationList = AFB3E8A72BD30BFE000A34D3 /* Build configuration list for PBXProject "Poker Pocket Odds" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -168,8 +168,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFB3E8A92BD30BFE000A34D3 /* PokerMastermind */,
-				AFB3E8AF2BD30BFE000A34D3 /* PokerMastermind Watch App */,
+				AFB3E8A92BD30BFE000A34D3 /* Poker Pocket Odds */,
+				AFB3E8AF2BD30BFE000A34D3 /* Poker Pocket Odds Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -200,7 +200,7 @@
 			files = (
 				AFB3E8B82BD30BFE000A34D3 /* ContentView.swift in Sources */,
 				AFB3E8C82BD30C73000A34D3 /* EachCardView.swift in Sources */,
-				AFB3E8B62BD30BFE000A34D3 /* PokerMastermindApp.swift in Sources */,
+				AFB3E8B62BD30BFE000A34D3 /* PokerPocketOddsApp.swift in Sources */,
 				AFB3E8CA2BD30DBE000A34D3 /* CalculateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +210,7 @@
 /* Begin PBXTargetDependency section */
 		AFB3E8B32BD30BFE000A34D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AFB3E8AF2BD30BFE000A34D3 /* PokerMastermind Watch App */;
+			target = AFB3E8AF2BD30BFE000A34D3 /* Poker Pocket Odds Watch App */;
 			targetProxy = AFB3E8B22BD30BFE000A34D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -336,21 +336,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"PokerMastermind Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = LD578K3BS7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = PokerMastermind;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ryofujimura.PokerMastermind.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = ryofujimura.PokerPoketOdds.watchkitapp;
+				PRODUCT_NAME = "Poker Pocket Odds";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -366,21 +365,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"PokerMastermind Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = LD578K3BS7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = PokerMastermind;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ryofujimura.PokerMastermind.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = ryofujimura.PokerPoketOdds.watchkitapp;
+				PRODUCT_NAME = "Poker Pocket Odds";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -400,7 +398,7 @@
 				DEVELOPMENT_TEAM = LD578K3BS7;
 				INFOPLIST_KEY_CFBundleDisplayName = PokerMastermind;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ryofujimura.PokerMastermind;
+				PRODUCT_BUNDLE_IDENTIFIER = ryofujimura.PokerPoketOdds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -416,7 +414,7 @@
 				DEVELOPMENT_TEAM = LD578K3BS7;
 				INFOPLIST_KEY_CFBundleDisplayName = PokerMastermind;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ryofujimura.PokerMastermind;
+				PRODUCT_BUNDLE_IDENTIFIER = ryofujimura.PokerPoketOdds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -427,7 +425,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AFB3E8A72BD30BFE000A34D3 /* Build configuration list for PBXProject "PokerMastermind" */ = {
+		AFB3E8A72BD30BFE000A34D3 /* Build configuration list for PBXProject "Poker Pocket Odds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFB3E8BE2BD30BFF000A34D3 /* Debug */,
@@ -436,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFB3E8C02BD30BFF000A34D3 /* Build configuration list for PBXNativeTarget "PokerMastermind Watch App" */ = {
+		AFB3E8C02BD30BFF000A34D3 /* Build configuration list for PBXNativeTarget "Poker Pocket Odds Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFB3E8C12BD30BFF000A34D3 /* Debug */,
@@ -445,7 +443,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFB3E8C42BD30BFF000A34D3 /* Build configuration list for PBXNativeTarget "PokerMastermind" */ = {
+		AFB3E8C42BD30BFF000A34D3 /* Build configuration list for PBXNativeTarget "Poker Pocket Odds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFB3E8C52BD30BFF000A34D3 /* Debug */,
